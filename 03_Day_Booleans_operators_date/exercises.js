@@ -1,5 +1,20 @@
 // EXERCISES: Level 1
 // 1. Declare firstName, lastName, country, city, age, isMarried, year variable and assign value to it and use the typeof operator to check different data types.
+let firstName = 'Kent';
+let lastName = 'Block';
+let country= 'Australia';
+let city = 'Melbourne';
+let age = 45;
+let isMarried = yes;
+let year = 1960;
+
+console.log(typeof firstName);
+console.log(typeof lastName);
+console.log(typeof country);
+console.log(typeof city);
+console.log(typeof age);
+console.log(typeof isMarried);
+console.log(typeof year);
 
 // 2. Check if type of '10' is equal to 10
 
