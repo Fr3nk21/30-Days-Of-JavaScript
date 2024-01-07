@@ -17,13 +17,35 @@ console.log(typeof isMarried);
 console.log(typeof year);
 
 // 2. Check if type of '10' is equal to 10
+let str = '10';
+let num = 10;
+
+console.log(str === num);
 
 // 3. Check if parseInt('9.8') is equal to 10
+let num03 = parseInt('9.8')
+let num04 = 10
+
+console.log(num03 === num04);
 
 /* 4. Boolean value is either true or false.
       i. Write three JavaScript statement which provide truthy value.
       ii. Write three JavaScript statement which provide falsy value.
 */
+let num05 = 2
+let num06 = 3
+let num07 = 4
+let num08 = 2
+let num09 = 3
+let num10 = 4
+
+console.log(num05 === num08)
+console.log(num06 === num09)
+console.log(num07 === num10)
+
+console.log(num05 === num09)
+console.log(num06 === num08)
+console.log(num07 === num08)
 
 /* 5. Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
       i. 4 > 3
@@ -39,6 +61,42 @@ console.log(typeof year);
       xi. 4 === '4'
       xii. Find the length of python and jargon and make a falsy comparison statement.
 */
+let resulti = 4 > 3;
+console.log(resulti);
+
+let resultii = 4 >= 3;
+console.log(resultii);
+
+let resultiii = 4 < 3;
+console.log(resultiii);
+
+let resultiv = 4 <= 3;
+console.log(resultiv);
+
+let resultv = 4 == 4;
+console.log(resultv);
+
+let resultvi = 4 === 4;
+console.log(resultvi);
+
+let resultvii = 4 != 4;
+console.log(resultvii);
+
+let resultviii = 4 !== 4;
+console.log(resultviii);
+
+let resultix = 4 != '4';
+console.log(resultix);
+
+let resultx = 4 == '4';
+console.log(resultx);
+
+let resultxi = 4 === '4';
+console.log(resultxi);
+
+let resultxii1 = 'python';
+let resultxii2 = 'jargon';
+console.log(resultxii1.length === resultxii2.length + 2);
 
 /* 6. Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
       i. 4 > 3 && 10 < 12
