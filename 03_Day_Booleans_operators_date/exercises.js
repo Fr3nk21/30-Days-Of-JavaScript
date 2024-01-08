@@ -111,6 +111,45 @@ console.log(resultxii1.length === resultxii2.length + 2);
       x. !(4 === '4')
       xi. There is no 'on' in both dragon and python
 */
+let vari = 4 > 3 && 10 < 12
+console.log(vari)
+
+let varii = 4 > 3 && 10 > 12
+console.log(varii)
+
+let variii = 4 > 3 || 10 < 12
+console.log(variii)
+
+let variv = 4 > 3 || 10 > 12
+console.log(variv)
+
+let varv = !(4 > 3)
+console.log(varv)
+
+let varvi = !(4 < 3)
+console.log(varvi)
+
+let varvii = !(false)
+console.log(varvii)
+
+let varviii = !(4 > 3 && 10 < 12)
+console.log(varviii)
+
+let varix = !(4 > 3 && 10 > 12)
+console.log(varix)
+
+let x = !(4 === '4')
+console.log(varx)
+
+let word1 = 'dragon'
+let word2 = 'python'
+
+let containsOnInWord1 = word1.includes('on')
+let containsOnInWord2 = word2.includes('on')
+
+let result = !containsOnInWord1 && !containsOnInWord2
+
+console.log('Result:', result)
 
 /* 7. Use the Date object to do the following activities
       i. What is the year today?
@@ -121,6 +160,17 @@ console.log(resultxii1.length === resultxii2.length + 2);
       vi. What is the minutes now?
       vii. Find out the numbers of seconds elapsed from January 1, 1970 to now.
 */
+
+let date = new Date()
+console.log(date.getFullYear())
+console.log(date.getMonth() + 1)
+console.log(date.getDate())
+console.log(date.getDay())
+console.log(date.getHours())
+console.log(date.getMinutes())
+console.log(date.getMinutes())
+
+console.log(Math.floor(now.getTime() / 1000))
 
 // EXERCISES: Level 2
 /* 1. Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).
