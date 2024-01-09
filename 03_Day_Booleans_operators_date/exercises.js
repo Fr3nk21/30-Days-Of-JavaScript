@@ -179,6 +179,9 @@ Enter base: 20
 Enter height: 10
 The area of the triangle is 100
 */
+let base = prompt('Add the base of your triangle');
+let height = prompt('Add the height of your triangle');
+console.log('The area of your triangle is ' + (0.5 * base * height));
 
 /* 2. Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
 
@@ -187,18 +190,49 @@ Enter side b: 4
 Enter side c: 3
 The perimeter of the triangle is 12
 */
+let sideA = prompt('Add the value for side A');
+let sideB = prompt('Add the value for side B');
+let sideC = prompt('Add the value for side C');
+console.log('The perimeter of your triangle is ' + (a + b + c));
+
 
 // 3. Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
+let length = prompt('Add the length of your rectangle');
+let width = prompt('Add the width of your rectangle');
+
+console.log('The area of your rectangle is ' + (length * width));
+console.log('The perimeter of your rectangle is ' + (2 * (length + width)));
 
 // 4. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
+let radius = prompt('Add the radius of your circle');
+let pi = 3.14;
+
+console.log('The radius of your circle is ' + (pi * radius * radius));
+console.log('The circumference of your circle is ' + (2 * pi * radius));
 
 // 5. Calculate the slope, x-intercept and y-intercept of y = 2x -2
+let xIntercept = prompt('What the x-interception');
+let yIntercept = prompt('What the y-interception');
+
+console.log('The slope is ' + );
 
 // 6. Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
+let xIntercept = prompt('What the x-interception');
+let yIntercept = prompt('What the y-interception');
+
+console.log('The slope is ' + );
 
 // 7. Compare the slope of above two questions.
+let xIntercept = prompt('What the x-interception');
+let yIntercept = prompt('What the y-interception');
+
+console.log('The slope is ' + );
 
 // 8. Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
+let xIntercept = prompt('What the x-interception');
+let yIntercept = prompt('What the y-interception');
+
+console.log('The slope is ' + );
 
 /* 9. Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
 
@@ -206,8 +240,19 @@ Enter hours: 40
 Enter rate per hour: 28
 Your weekly earning is 1120
 */
+let rate = prompt('How much do you get pay for hour');
+let hours = prompt('How many hours did you worked today?')
+
+console.log('Your weekly earning is ' + (rate * hours));
 
 // 10. If the length of your name is greater than 7 say, your name is long else say your name is short.
+let name = prompt(`What\'s your name?`);
+
+if (name > 7) {
+      console.log('Your name is long');
+} else {
+      console.log('Your name is short');
+}
 
 /* 11. Compare your first name length and your family name length and you should get this output.
 
@@ -215,6 +260,15 @@ let firstName = 'Asabeneh'
 let lastName = 'Yetayeh'
 Your first name, Asabeneh is longer than your family name, Yetayeh
 */
+let primoNome = prompt('What\'s your first name?');
+let famigliaNome = prompt('What\'s your surname?');
+
+if (primoNome.lenght > famigliaNome.lenght) {
+      console.log('Your first name, ' + $("primoNome") + 'is longer than your family name, ' + $("famigliaName"))
+} else {
+      console.log('Your family name, ' + $("famigliaName") + 'is longer than your first name, ' + $("primoNome"))
+}
+
 
 /* 12. Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
 
