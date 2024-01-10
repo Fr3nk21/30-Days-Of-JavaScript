@@ -276,6 +276,10 @@ let myAge = 250
 let yourAge = 25
 I am 225 years older than you.
 */
+let myAge = 250;
+let yourAge = 25;
+let ageDifference = myAge - yourAge;
+console.log('I am ' + ageDifference + 'than you');
 
 /* 13. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
 
@@ -285,6 +289,13 @@ You are 25. You are old enough to drive
 Enter birth year: 2005
 You are 15. You will be allowed to drive after 3 years.
 */
+let yearBorn = prompt('Enter birth year:');
+
+if (yearBorn > 18) {
+      console.log('You are ' + yearBorn + '. You are old enough to drive');
+} else {
+      console.log('You are ' + yearBorn + '. You will be allowed to drive after 3 years.')
+}
 
 /* 14. Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
 
@@ -292,13 +303,27 @@ Enter number of years you live: 100
 You lived 3153600000 seconds.
 */
 
+let yearProm = prompt('Enter number of years you live');
+
+let prediction = yearProm * 31536000;
+
+console.log('You will leave ' + prediction + 'seconds');
+
 /* 15. Create a human readable time format using the Date time object
       i. YYYY-MM-DD HH:mm
       ii. DD-MM-YYYY HH:mm
       iii. DD/MM/YYYY HH:mm
 */
+let dateCurr = new Date();
+
+console.log(dateCurr.getFullYear() + '-' + dateCurr.getMonth() + '-' + dateCurr.getDate() + ' ' + dateCurr.getHours() + ':' + dateCurr.getMinutes());
+console.log(dateCurr.getDate() + '-' + dateCurr.getMonth() + '-' + dateCurr.getFullYear() + ' ' + dateCurr.getHours() + ':' + dateCurr.getMinutes());
+console.log(dateCurr.getDate() + '/' + dateCurr.getMonth() + '/' + dateCurr.getFullYear() + ' ' + dateCurr.getHours() + ':' + dateCurr.getMinutes());
 
 // EXERCISES: Level 3
 /* 1. Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
       i. YYY-MM-DD HH:mm eg. 20120-01-02 07:05
 */
+let dateCurr1 = new Date();
+
+console.log(dateCurr1.getFullYear() + '-' + dateCurr1.getMonth() + '-' + dateCurr1.getDate() + ' ' + dateCurr1.getHours() + ':' + dateCurr1.getMinutes());
