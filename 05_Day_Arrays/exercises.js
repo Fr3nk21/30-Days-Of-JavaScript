@@ -1,49 +1,76 @@
 // EXERCISES: Level 1
-// 1. 
+/*
+const countries = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+]
 
-// 2. 
+const webTechs = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+]
 
-// 3. 
+*/
 
-// 4. 
+// 1. Declare an empty array;
 
-// 5. 
+// 2. Declare an array with more than 5 number of elements
 
-// 6. 
+// 3. Find the length of your array
 
-// 7. 
+// 4. Get the first item, the middle item and the last item of the array
 
-// 8. 
+// 5. Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
 
-// 9. 
+// 6. Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
 
-// 10. 
+// 7. Print the array using console.log()
 
-// 11. 
+// 8. Print the number of companies in the array
 
-// 12. 
+// 9. Print the first company, middle and last company
 
-// 13. 
+// 10. Print out each company
 
-// 14. 
+// 11. Change each company name to uppercase one by one and print them out
 
-// 15. 
+// 12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
 
-// 16. 
+// 13. Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
 
-// 17. 
+// 14. Filter out companies which have more than one 'o' without the filter method
 
-// 18. 
+// 15. Sort the array using sort() method
 
-// 19. 
+// 16. Reverse the array using reverse() method
 
-// 20. 
+// 17. Slice out the first 3 companies from the array
 
-// 21. 
+// 18. Slice out the last 3 companies from the array
 
-// 22. 
+// 19. Slice out the middle IT company or companies from the array
 
-// 23. 
+// 20. Remove the first IT company from the array
+
+// 21. Remove the middle IT company or companies from the array
+
+// 22. Remove the last IT company from the array
+
+// 23. Remove all IT companies
 
 // EXERCISES: Level 2
 // 1. Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
