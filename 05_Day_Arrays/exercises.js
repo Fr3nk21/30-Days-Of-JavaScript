@@ -27,30 +27,54 @@ const webTechs = [
 */
 
 // 1. Declare an empty array;
+const array = [];
 
 // 2. Declare an array with more than 5 number of elements
+const arrayNumber = [1, 2, 3, 4, 5];
 
 // 3. Find the length of your array
+console.log(arrayNumber.length)
 
 // 4. Get the first item, the middle item and the last item of the array
+console.log(arrayNumber[0], arrayNumber[2], arrayNumber[4]);
 
 // 5. Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
+const mixedDataTypes = [2, 'Piero', true, 'Luca', 6, false];
+console.log(mixedDataTypes.length);
 
 // 6. Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
+const itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
 
 // 7. Print the array using console.log()
+console.log(itCompanies);
 
 // 8. Print the number of companies in the array
+console.log(itCompanies.length);
 
 // 9. Print the first company, middle and last company
+console.log(itCompanies[0], itCompanies[3], itCompanies[6]);
 
 // 10. Print out each company
+console.log(itCompanies);
 
 // 11. Change each company name to uppercase one by one and print them out
+var upperCase = itCompanies.join(',').toUpperCase();
+console.log(upperCase);
 
 // 12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
+var sentence = itCompanies.join(',');
+var add = ' are big IT companies.';
 
 // 13. Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
+const exT = function(company) {
+  if (itCompanies.includes(company)) {
+      console.log(company);
+  } else {
+      console.log('The company is not in the array');
+  }
+}
+
+exT('Facebook');
 
 // 14. Filter out companies which have more than one 'o' without the filter method
 
