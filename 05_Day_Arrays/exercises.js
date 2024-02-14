@@ -70,31 +70,58 @@ const exT = function(company) {
   if (itCompanies.includes(company)) {
       console.log(company);
   } else {
-      console.log('The company is not in the array');
+      console.log('The company is not found');
   }
 }
 
 exT('Facebook');
 
 // 14. Filter out companies which have more than one 'o' without the filter method
+const filteredCompanies = [];
+
+for (let i = 0; i < itCompanies.length; i++) {
+  let count = 0;
+  for (let j = 0; j < itCompanies[i].length; j++) {
+    if (itCompanies[i][j] === 'o') {
+      count++;
+    }
+  }
+  if (count <= 1) {
+    filteredCompanies.push(itCompanies[i]);
+  }
+}
+
+console.log(filteredCompanies);
 
 // 15. Sort the array using sort() method
+console.log(itCompanies.sort());
 
 // 16. Reverse the array using reverse() method
+console.log(itCompanies.reverse());
 
 // 17. Slice out the first 3 companies from the array
+console.log(itCompanies.slice(0, 3));
 
 // 18. Slice out the last 3 companies from the array
+console.log(itCompanies.slice(4, 7));
 
 // 19. Slice out the middle IT company or companies from the array
+console.log(itCompanies.slice(2, 6));
 
 // 20. Remove the first IT company from the array
+console.log(itCompanies.shift(0));
 
 // 21. Remove the middle IT company or companies from the array
+console.log(itCompanies.shift(4));
 
 // 22. Remove the last IT company from the array
+console.log(itCompanies.pop());
 
 // 23. Remove all IT companies
+for (let i = 0; i < itCompanies.length; i++) {
+  console.log(itCompanies[i]);
+}
+MimeTypeArray.length = 0;
 
 // EXERCISES: Level 2
 // 1. Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
