@@ -125,6 +125,7 @@ MimeTypeArray.length = 0;
 
 // EXERCISES: Level 2
 // 1. Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
+/* Done in main.js file */
 
 /* 2. First remove all the punctuations and change the string to array and count the number of words in the array
   let text =
@@ -135,7 +136,10 @@ MimeTypeArray.length = 0;
   ["I", "love", "teaching", "and", "empowering", "people", "I", "teach", "HTML", "CSS", "JS", "React", "Python"]
 
   13
-*/ 
+*/
+
+let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.';
+
 
 /* 3. In the following shopping cart add, remove, edit items
   const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
