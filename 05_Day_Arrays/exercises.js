@@ -148,10 +148,29 @@ let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React,
   remove 'Honey' if you are allergic to honey
   modify Tea to 'Green Tea'
 */
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+shoppingCart.unshift('Meat');
+shoppingCart.push('Sugar');
+shoppingCart.splice(4, 1);
+shoppingCart[3] = 'Green Tea';
 
 // 4. In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
+let eti = function() {
+  if (countries.indexOf('Ethiopia') > 0) {
+    console.log('ETHIOPIA');
+  } else {
+    countries.push('Ethiopia');
+  }
+}
 
 // 5. In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
+let sas = function() {
+  if (webTechs.indexOf('Sass') > 0) {
+    console.log('Sass is a CSS preprocess');
+  } else {
+    webTechs.push('Sass');
+  }
+}
 
 /* 6. Concatenate the following two variables and store it in a fullStack variable.
   const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
@@ -161,6 +180,10 @@ let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React,
 
   ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
 */
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+const fullStack = frontEnd.concat(backEnd); 
+console.log(fullStack) 
 
 // EXERCISES: Level 3
 /* 1. The following is an array of 10 students ages:
