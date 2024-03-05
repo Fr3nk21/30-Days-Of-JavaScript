@@ -195,7 +195,22 @@ console.log(fullStack)
   Find the range of the ages(max minus min)
   Compare the value of (min - average) and (max - average), use abs() method 1.Slice the first ten countries from the countries array
 */
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+ages.sort();
 
+ages[0];
+const last = ages.length - 1;
+ages[last];
+
+const media = ages.length / 2;
+ages[media];
+
+const aver = ages[0] + ages[1] + ages[2] + ages[3] + ages[4] + ages[5] + ages[6] + ages[7] + ages[8] + ages[9];
+const div = aver / 9; 
+
+const range = ages[last] - ages[0];
 // 2. Find the middle country(ies) in the countries array
+const lunghezza = Math.floor(countries.length / 2); 
+countries[lunghezza];
 
 // 3. Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half.
