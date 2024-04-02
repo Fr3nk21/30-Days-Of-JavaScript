@@ -28,8 +28,45 @@ const mernStack = ['MongoDB', 'Express', 'React', 'Node']
 */
 
 // 1 - Iterate 0 to 10 using for loop, do the same using while and do while loop
+for(let i = 0; i < 11; i++) {
+  console.log(i);
+}
+
+let i = 0
+while (i < 11) {
+  console.log(i);
+  i++
+}
+
+let i = 0
+do {
+  console.log(i)
+  i++
+} while (i < 11)
+
 // 2 - Iterate 10 to 0 using for loop, do the same using while and do while loop
+for(let i = 10; i >= 0; i--) {
+  console.log(i);
+}
+
+let i = 10
+while (i >= 0) {
+  console.log(i);
+  i--
+}
+
+let i = 10
+do {
+  console.log(i)
+  i--
+} while (i >= 0)
+
 // 3 - Iterate 0 to n using for loop
+let n = 10;
+for (let i = 0; i >= n; i++) {
+  console.log(i)
+}
+
 /* 4 - Write a loop that makes the following pattern using console.log():
     #
     ##
