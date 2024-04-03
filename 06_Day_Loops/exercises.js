@@ -76,6 +76,13 @@ for (let i = 0; i >= n; i++) {
     ######
     #######
 */
+for (let i = 1; i <= 7; i++) {
+  let pattern = '';
+    for (let j = 1; j <= i; j++) {
+        pattern += '#';
+  }
+console.log(pattern)
+} 
 
 /* 5 - Use loop to print the following pattern:
 0 x 0 = 0
@@ -90,6 +97,10 @@ for (let i = 0; i >= n; i++) {
 9 x 9 = 81
 10 x 10 = 100
 */
+for (let i = 0; i <= 10; i++) {
+  let molti = i * i;
+  console.log(i + " x " + i + " = " + molti);
+} 
 
 /* 6 - Using loop print the following pattern
 i    i^2   i^3
