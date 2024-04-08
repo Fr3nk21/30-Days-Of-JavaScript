@@ -116,21 +116,74 @@ i    i^2   i^3
 9    81    729
 10   100   1000
 */
+for (let i = 0; i <= 10; i++) {
+  let molti = i * i;
+  let moltiMore = molti * i;
+  console.log(i + "   " + molti + "   " + moltiMore);
+}
 
 // 7 - Use for loop to iterate from 0 to 100 and print only even numbers
+for (let i = 1; i <= 100; i+=2) {
+  console.log(i);
+}
+
 // 8 - Use for loop to iterate from 0 to 100 and print only odd numbers
+for (let i = 0; i <= 100; i+=2) {
+  console.log(i);
+}
+
 // 9 - Use for loop to iterate from 0 to 100 and print only prime numbers
+
+// Function to check if a number is prime
+function isPrime(num) {
+  if (num <= 1) return false; // 1 is not considered a prime number
+  if (num === 2) return true; // 2 is a prime number
+
+  // Check if the number is divisible by any number from 2 to its square root
+  const squareRoot = Math.floor(Math.sqrt(num));
+  for (let i = 2; i <= squareRoot; i++) {
+    if (num % i === 0) {
+      return false; // If divisible, it's not prime
+    }
+  }
+
+  return true; // If not divisible by any number, it's prime
+}
+
+// Print prime numbers from 1 to 100
+console.log("Prime numbers from 1 to 100:");
+for (let i = 1; i <= 100; i++) {
+  if (isPrime(i)) {
+    console.log(i);
+  }
+}
+
+
 /* 10 - Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+
+
 The sum of all numbers from 0 to 100 is 5050.
 */
+let sum = 0;
+
+for (let i = 0; i <= 100; i++) {
+  sum += i;
+}
+
+console.log("The sum of all numbers from 0 to 100 is:", sum);
+
 /* 11 - Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
 The sum of all evens from 0 to 100 is 2550. And the sum of all odds from 0 to 100 is 2500.
 */
+
 /* 12 - Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
 [2550, 2500]
 */
+
 // 13 - Develop a small script which generate array of 5 random numbers
+
 // 14 - Develop a small script which generate array of 5 random numbers and the numbers must be unique
+
 /* 15 - Develop a small script which generate a six characters random id:
 5j2khz
 */
